@@ -15,7 +15,7 @@ jobs:
           -H "Content-Type: application/json" \
           -d "{
             \"embeds\": [{
-              \"title\": \"New Issue\",
+              \"title\": \"**${{ github.event.issue.title }}**\",
               \"url\": \"${{ github.event.issue.html_url }}\",
               \"color\": 15158332,
               \"author\": {
