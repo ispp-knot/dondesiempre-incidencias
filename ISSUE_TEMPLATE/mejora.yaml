@@ -1,0 +1,32 @@
+name: Sugerencia de mejora
+description: Propón una mejora o nueva funcionalidad
+labels: [Sugerencia de mejora]
+projects: [ispp-knot/3]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Explica la mejora o idea
+      placeholder: "Ej: Añadir modo oscuro"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema que resuelve
+      description: Qué problema soluciona esta mejora
+      placeholder: "Ahora mismo es difícil usar la app de noche"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Información adicional
+      description: Mockups, referencias, contexto, etc.
+      placeholder: "Opcional"
+    validations:
+      required: false
